@@ -1,11 +1,9 @@
 .hero {
     position: relative;
-
 }
 
 .banner-img {
     width: 100%;
-
     mask-image: linear-gradient(to right, transparent, black 75%); 
     -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
 }
@@ -19,12 +17,12 @@
 }
 
 .caption {
-    width: 95%;
+    width: 90%;
     max-width: 420px;
     margin-bottom: 30px;
 }
 
-.caption p {
+.hero-caption p {
     max-width: 700px;
     font-size: 17px;
     margin-bottom: 20px;
@@ -52,4 +50,21 @@
     background: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.hero-btns .btn.dark {
+    color: white;
+    background: #6D6D6EB3;
+}
+
+.hero-btns .btn:hover {
+    background: #ffffffbf;
+}
+
+.hero-btns .btn.dark:hover {
+    background: #6D6D6E66;
+}
+
+.more-cards {
+    padding-left: 6%;
 }
