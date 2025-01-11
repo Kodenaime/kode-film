@@ -20,7 +20,7 @@ const Login = () => {
           
           <input type="email" placeholder='Email'/>
           <input type="password" placeholder='password' />
-          <button>Sign Up</button>
+          <button>{login}</button>
 
           <div className="help">
             <div className="remenber"><input type="checkbox" /> <label htmlFor="">Keep Me Signed In</label> </div>
@@ -29,8 +29,13 @@ const Login = () => {
 
         </form>
         <div className="switch">
-          <p>New To Kode Movies? <span>Sign Up Now</span></p>
-          <p>Already Have an Accoubt? <span>Sign In</span></p>
+          {
+            login === "Sign In" ?
+            <p>New To Kode Movies? <span onClick={() => {setLogin("Sign Up")}}>Sign Up Now</span></p> :
+            <p>Already Have an Accoubt? <span onClick={() => {setLogin("Sign In")}}>Sign In</span></p> 
+          }
+          
+          
         </div>
       </div>
     </div>

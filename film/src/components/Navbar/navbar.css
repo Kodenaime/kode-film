@@ -75,3 +75,7 @@
 .nav-profile:hover .drop {
     display: block;
 }
+
+.dark-nav {
+    background: #141414;
+}
