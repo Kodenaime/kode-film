@@ -6,6 +6,7 @@ import searchi from '../../assets/search_icon.svg'
 import bell from '../../assets/bell_icon.svg'
 import profilei from '../../assets/profile_img.png'
 import caret from '../../assets/caret_icon.svg'
+import { logout } from '../../firebase'
 
 const Navbar = () => {
 
@@ -46,7 +47,7 @@ const Navbar = () => {
             <img src={caret} alt="caret icon"  />
 
             <div className="drop">
-              <p>Sign Out</p>
+              <p onClick={() => {logout()}}>Sign Out</p>
             </div>
 
         </div>

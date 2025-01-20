@@ -5,6 +5,8 @@ import { login, signup } from '../../firebase'
 import logo from '../../assets/mainlogo.png'
 import { useState } from 'react'
 
+import loader from '../../assets/netflix_spinner.gif'
+
 const Login = () => {
 
   const [signState, setSignState] = useState("Sign In")
@@ -13,17 +15,26 @@ const Login = () => {
   const [email, setEmail] = useState(""); 
   const [password, setPassword] = useState("");
 
+  const [loading, setLoading] = useState(false);
+
   //user authentication function
   const user_auth = async (event) => {
     event.preventDefault();
+    setLoading(true);
     if(signState === "Sign In") {
       await login(email, password);
     } else {
       await signup(name, email, password);
     }
+
+    setLoading(false);
+
   } 
 
   return (
+    loading ? <div className="spinner">
+      <img src={loader} alt="movie loader" />
+    </div> :
     <div className='login'>
       <img src={logo} alt="website logo" className='logos' />
       <div className="form">

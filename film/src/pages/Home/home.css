@@ -68,3 +68,40 @@
 .more-cards {
     padding-left: 6%;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .hero-caption .card-list {
+        display: none;
+    }
+
+    .hero-btns {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-caption {
+        padding-left: 4%;
+
+    }
+
+    .caption {
+        margin-bottom: 10px;
+        width: 40%;
+    }
+
+    .hero-caption p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .btn img {
+        width: 20px;
+    }
+
+    .more-cards {
+        padding-left: 4%;
+    }
+}
+
