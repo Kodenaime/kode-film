@@ -71,7 +71,7 @@
 
 
 @media screen and (max-width: 1024px) {
-    .hero-caption .card-list {
+    .hero-caption .title {
         display: none;
     }
 
@@ -80,7 +80,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     .hero-caption {
         padding-left: 4%;
 
@@ -96,12 +96,29 @@
         margin-bottom: 10px;
     }
 
-    .btn img {
+    .hero-btns .btn img {
         width: 20px;
     }
 
     .more-cards {
         padding-left: 4%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .caption {
+        display: none;
+    }
+
+    .hero-btns .btn img {
+        width: 15px;
+    }
+
+    .hero-btns .btn {
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
     }
 }
 

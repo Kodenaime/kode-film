@@ -35,3 +35,38 @@
     text-decoration: none;
     color: white;
 }
+
+
+@media screen and (max-width: 800px) {
+    .title {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .card-list img {
+        width: 200px;
+    }
+
+    .card-list p {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .title h2 {
+        font-size: 15px;
+    }
+
+    .card-list img {
+        width: 170px;
+    }
+
+    .card-list p {
+        font-size: 10px;
+    }
+} 
